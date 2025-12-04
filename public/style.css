@@ -1,0 +1,104 @@
+ * { margin: 0; padding: 0; }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+          background-image: url("./assets/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+   font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, system-ui, sans-serif;
+  font-size: 16px;        /* base */
+  color: #111827;         /* dark text for readability */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+    }
+    section { display: flex;
+         justify-content: center;
+          align-items: center;
+           height: 80vh;
+            width: 40vw;
+             border:1px solid black;
+              border-radius: 20px;
+               margin-top: 75px;
+            }
+
+    section form {
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        width: 100%;
+        padding: 10px;
+    }
+    section form label {
+        width: 70%;
+        text-align: left;
+    }
+    section form input {
+        width: 70%;
+        height: 40px;
+        border: 0.5px solid white;
+        border-radius: 12px;
+        font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, system-ui, sans-serif;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    section form button { width: 70%; 
+    height: 40px;
+    border-radius: 12px;
+    }
+
+    .section2{
+  /* make the section semi-transparent so backdrop-filter can blur what's behind it */
+  background: rgba(255, 255, 255, 0.15); /* fallback/background color */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+
+  /* optional: add a subtle inner border and shadow for contrast */
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Utility: make sure child content sits above glass layer */
+.section2 > * { position: relative; z-index: 1; }
+
+
+.section2 form h1 {
+  font-family: "Poppins", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 1.8rem;            /* prominent size */
+  line-height: 1.03;
+  letter-spacing: 0.4px;
+  margin: 0 0 8px;
+  text-align: center;
+
+  /* gradient clipped to text for a modern look */
+  color: transparent;
+  background: linear-gradient(90deg, #0ea5e9 0%, #0284c7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* soft glow to improve legibility on varied backgrounds */
+  text-shadow: 0 6px 18px rgba(2,132,199,0.08);
+
+  display: inline-block;
+  padding: 0 6px;
+}
+
+/* Small decorative bar under the heading */
+.section2 form h1::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin: 10px auto 0;
+  border-radius: 4px;
+  background: linear-gradient(90deg, rgba(14,165,233,0.95) 0%, rgba(2,132,199,0.95) 100%);
+  box-shadow: 0 6px 16px rgba(2,132,199,0.12);
+}

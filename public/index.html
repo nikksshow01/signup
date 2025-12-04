@@ -4,20 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>sign up</title>
-  <style>
-    * { margin: 0; padding: 0; }
-    body { display: flex; justify-content: center; align-items: center; }
-    section { display: flex; justify-content: center; align-items: center; height: 80vh; width: 50vw; }
-    section form { justify-content: center; align-items: center; border: 2px solid black; border-radius: 25px; height: 70%; display: flex; flex-direction: column; background-color: aqua; width: 360px; padding: 10px; }
-    section form label { margin-right: 50%; }
-    section form input { width: 70%; height: 40px; border: 0.5px solid white; }
-    section form button { width: 70%; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <section>
+
+  </section>
+
+
+  <section class="section2">
     <!-- changed action to match server route -->
     <form action="http://localhost:5000/api/auth/signup" method="post">
+      <h1>Join Us</h1>
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="fname" required><br>
 
