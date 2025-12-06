@@ -4,14 +4,20 @@
         justify-content: center;
         align-items: center;
         flex-direction: row;
-          background-image: url("./assets/back.jpg");
-  background-size: cover;
+          /* /* background-image: url("./assets/back.jpg"); */
+   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+ background: linear-gradient(
+  90deg,
+  #e3ab3ae5 0%,
+  #e3ab3ae5 20%,
+   #46D5E3 60%,
+  #46d6e3ad 100%
+);
    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, system-ui, sans-serif;
-  font-size: 16px;        /* base */
-  color: #111827;         /* dark text for readability */
+  font-size: 16px;        
+  color: #111827;        
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
     }
@@ -20,12 +26,11 @@
           align-items: center;
            height: 80vh;
             width: 40vw;
-             border:1px solid black;
               border-radius: 20px;
                margin-top: 75px;
             }
 
-    section form {
+    .section2 form {
         justify-content: center;
         align-items: center;
         border-radius: 25px;
@@ -36,11 +41,11 @@
         width: 100%;
         padding: 10px;
     }
-    section form label {
+    .section2 form label {
         width: 70%;
         text-align: left;
     }
-    section form input {
+    .section2 form input {
         width: 70%;
         height: 40px;
         border: 0.5px solid white;
@@ -49,56 +54,82 @@
         font-size: 16px;
         padding-left: 10px;
     }
-    section form button { width: 70%; 
+    .section2 form button { width: 70%; 
     height: 40px;
     border-radius: 12px;
+    font-size: 19px;
+      font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, system-ui, sans-serif;
+      font-weight: 800;
+    background-color: greenyellow;
+    }
+
+    .section2 form button:hover{
+      color:  #ffffff;
+      background-color:#46D5E3;
+      font-size: 21px;
     }
 
     .section2{
-  /* make the section semi-transparent so backdrop-filter can blur what's behind it */
-  background: rgba(255, 255, 255, 0.15); /* fallback/background color */
+ 
+  background: rgba(255, 255, 255, 0.15); 
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 
-  /* optional: add a subtle inner border and shadow for contrast */
+ 
   border: 1px solid rgba(255,255,255,0.25);
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-/* Utility: make sure child content sits above glass layer */
+
 .section2 > * { position: relative; z-index: 1; }
 
 
 .section2 form h1 {
   font-family: "Poppins", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 800;
-  font-size: 1.8rem;            /* prominent size */
+  font-size: 1.8rem;          
   line-height: 1.03;
   letter-spacing: 0.4px;
   margin: 0 0 8px;
   text-align: center;
+  font-size: 60px;
+  -webkit-text-stroke:  0.8px #ffffff;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
 
-  /* gradient clipped to text for a modern look */
+  
   color: transparent;
-  background: linear-gradient(90deg, #0ea5e9 0%, #0284c7 100%);
+  background: linear-gradient(90deg, #ffffff9e 10%, #434244ae 90%);
   -webkit-background-clip: text;
   background-clip: text;
 
-  /* soft glow to improve legibility on varied backgrounds */
+  
   text-shadow: 0 6px 18px rgba(2,132,199,0.08);
 
   display: inline-block;
   padding: 0 6px;
 }
 
-/* Small decorative bar under the heading */
+
 .section2 form h1::after {
   content: "";
   display: block;
-  width: 56px;
+  width: 156px;
   height: 4px;
   margin: 10px auto 0;
   border-radius: 4px;
-  background: linear-gradient(90deg, rgba(14,165,233,0.95) 0%, rgba(2,132,199,0.95) 100%);
+  background: linear-gradient(90deg, rgba(55, 55, 55, 0.733) 0%, rgba(205, 204, 206, 0.95) 100%);
   box-shadow: 0 6px 16px rgba(2,132,199,0.12);
+}
+
+.section1{
+      background-image: url("./assets/3d-removebg-preview\ \(1\).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+ 
 }
